@@ -1,6 +1,6 @@
 package org.example;
 
-public class Patron {
+public abstract class Patron {
     private String name;
     private String email;
     private String phonenumber;
@@ -11,9 +11,21 @@ public class Patron {
         this.phonenumber = phonenumber;
     }
 
+    public Patron(String name) {
+    }
 
     void showThisUser(){
         System.out.println("Name: "+name);
         System.out.println("email: "+email);
     }
+    public String getPhoneNumber() {
+        return phonenumber;
+    }
+    public String getEmail() {
+        return email;
+    }
+    public String getName() {
+        return name;
+    }
+    abstract public void menu();
 }

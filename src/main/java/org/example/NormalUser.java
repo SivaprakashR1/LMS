@@ -5,4 +5,9 @@ public class NormalUser extends Patron{
     public NormalUser(String name, String email, String phonenumber){
         super(name,email,phonenumber);
     }
+
+    @Override
+    public void menu() {
+
+    }
 }
